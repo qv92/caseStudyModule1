@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="start-game">
+    <div id="settings" class="settings">
+        <h1>Chọn độ khó</h1>
+        <form method="get" id="settings-form">
+            <div>
+                <select id="level">
+                    <option value="easy">Dễ</option>
+                    <option value="medium">Trung bình</option>
+                    <option value="hard">Khó</option>
+                </select>
+            </div>
+            <div>
+                <input id="inputName" placeholder="Nhập tên" value="" type="text">
+            </div>
+        </form>
+<!--        <input id="inputName" value="" type="text" placeholder="Nhập tên">-->
+        <button id="btn-start-game" type="submit">Bắt đầu</button>
+    </div>
+</div>
+</div>
+<div class="container hide" >
+    <div class="container-inner">
+        <h2>Typing Game</h2>
+        <div class="option">
+            <p class="time-container">Thời gian: <span id="time"></span></p>
+            <p class="score-container">Điểm: <span id="score">0</span></p>
+        </div>
+        <div class="game">
+            <p>Nhập nội dung sau:</p>
+            <div class="word-container">
+                <h1 id="word">Clear</h1>
+            </div>
+            <input type="text" id="text" autocomplete="off" placeholder="Nhập từ ở đây..." />
+        </div>
+        <div id="end-game-container" class="end-game-container">
+            <h1>Hết giờ</h1>
+            <p>Điểm của <span class="nameEl"></span> là: <span class="score"></span></p>
+            <button id="btn-reload-game">Chơi lại</button>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
